@@ -92,7 +92,7 @@ This repository is created to learn and practice Playwright using JavaScript/Typ
   └── README.md
    ```
 
-2️⃣ Write your first test case:
+2️⃣ Write first test case:
 
    ```typescript
 import { test, expect } from '@playwright/test';
