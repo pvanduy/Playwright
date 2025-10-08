@@ -47,6 +47,18 @@ This repository is created to learn and practice Playwright using JavaScript/Typ
 - ✅ Before Hooks: Run before tests or suites to set up data or environment.
 - ✅ After Hooks: Run after tests or suites to clean up resources or log results.
 - ✅ Worker Cleanup: Run once when a worker finishes to release global resources.
+  
+| `waitUntil`        | Waits For                              | Use Case                                              |
+| ------------------ | -------------------------------------- | ----------------------------------------------------- |
+| `load`             | All resources loaded (JS, CSS, images) | Ensure full page load; may be flaky on JS-heavy pages |
+| `domcontentloaded` | DOM parsed                             | Fast, stable; just interact with DOM                  |
+| `networkidle`      | No network requests for 500ms          | SPA or JS-heavy pages, wait for async requests        |
+| `commit`           | Navigation committed (URL changed)     | Rare; redirects or quick SPA navigation               |
+
+Example:
+```typescript
+await page.goto('https://example.com', { waitUntil: 'load' });
+```
 
 ---
 
