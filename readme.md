@@ -167,17 +167,17 @@ test('Login Test', async ({ page }) => {
 - [Playwright YouTube Channel](https://www.youtube.com/@Playwrightdev/)
 
 ## ⚙️ Playwright Browser Launch Arguments
-| Launch Argument                     | Description                               | Example Usage                           |
-| ----------------------------------- | ----------------------------------------- | --------------------------------------- |
-| `headless: true`                    | Runs browser in headless (invisible) mode | `{ headless: true }`                    |
-| `args: ['--disable-gpu']`           | Disables GPU hardware acceleration        | `{ args: ['--disable-gpu'] }`           |
-| `args: ['--window-size=1920,1080']` | Sets browser window size                  | `{ args: ['--window-size=1920,1080'] }` |
-| `args: ['--no-sandbox']`            | Disables sandbox (needed in CI/Docker)    | `{ args: ['--no-sandbox'] }`            |
-| `args: ['--disable-dev-shm-usage']` | Avoids shared memory issues in containers | `{ args: ['--disable-dev-shm-usage'] }` |
-| `args: ['--incognito']`             | Opens browser in incognito mode           | `{ args: ['--incognito'] }`             |
-| `args: ['--start-maximized']`       | Starts browser maximized                  | `{ args: ['--start-maximized'] }`       |
-| `args: ['--disable-extensions']`    | Disables extensions                       | `{ args: ['--disable-extensions'] }`    |
-| `ignoreHTTPSErrors: true`           | Ignores SSL certificate errors            | `{ ignoreHTTPSErrors: true }`           |
+| Description                               | Example Usage                           |
+| ----------------------------------------- | --------------------------------------- |
+| Runs browser in headless (invisible) mode | `{ headless: true }`                    |
+| Disables GPU hardware acceleration        | `{ args: ['--disable-gpu'] }`           |
+| Sets browser window size                  | `{ args: ['--window-size=1920,1080'] }` |
+| Disables sandbox (needed in CI/Docker)    | `{ args: ['--no-sandbox'] }`            |
+| Avoids shared memory issues in containers | `{ args: ['--disable-dev-shm-usage'] }` |
+| Opens browser in incognito mode           | `{ args: ['--incognito'] }`             |
+| Starts browser maximized                  | `{ args: ['--start-maximized'] }`       |
+| Disables extensions                       | `{ args: ['--disable-extensions'] }`    |
+| Ignores SSL certificate errors            | `{ ignoreHTTPSErrors: true }`           |
 
 ### 💻 Example Configuration (playwright.config.ts)
 ```typescript
