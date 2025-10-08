@@ -11,7 +11,7 @@ This repository documents my journey of learning Playwright — a modern end-to-
 - [Getting Started](#-getting-started)
 - [Example Test Case](#-example-test-case)
 - [Libraries and Resources](#-libraries-and-resources)
-- [Playwright Browser Launch Arguments](#-playwright-browser-launch-arguments)
+- [Playwright Browser Launch Arguments](#%EF%B8%8F-playwright-browser-launch-arguments)
   
 ---
 
