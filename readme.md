@@ -80,7 +80,8 @@ This repository is created to learn and practice Playwright using JavaScript/Typ
 
 
 ## 🚀 Getting Started
-1️⃣ Project Structure
+1️⃣ Project Structure  
+⚠️Playwright only runs tests in the `tests/` or `test/` folder with filenames ending in `.spec.ts`, `.spec.js`, `.test.ts`, `.test.js`
    ```plaintext
    learn-playwright/
   │
