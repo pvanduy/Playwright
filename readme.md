@@ -5,13 +5,13 @@ This repository documents my journey of learning Playwright — a modern end-to-
 ---
 
 ## 📚 Table of Contents
-- [Introduction](#introduction)
-- [Key Features](#key-features)
-- [Installation](#installation)
-- [Getting Started](#getting-started)
-- [Example Test Case](#example-test-case)
-- [Libraries and Resources](#libraries-and-resources)
-- [Playwright Browser Launch Arguments](#playwright-browser-launch-arguments)
+- [Introduction](#-introduction)
+- [Key Features](#-key-features)
+- [Installation](#-installation)
+- [Getting Started](#-getting-started)
+- [Example Test Case](#-example-test-case)
+- [Libraries and Resources](#-libraries-and-resources)
+- [Playwright Browser Launch Arguments](#-playwright-browser-launch-arguments)
   
 ---
 
