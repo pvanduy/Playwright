@@ -44,6 +44,11 @@ This repository is created to learn and practice Playwright using JavaScript/Typ
 | **Test Generator** | Records user actions into Playwright scripts |
 
 ---
+- ✅ Before Hooks: Run before tests or suites to set up data or environment.
+- ✅ After Hooks: Run after tests or suites to clean up resources or log results.
+- ✅ Worker Cleanup: Run once when a worker finishes to release global resources.
+
+---
 
 ## 🛠️ Installation
    ```bash
