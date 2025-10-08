@@ -7,7 +7,7 @@ This repository documents my journey of learning Playwright — a modern end-to-
 ## 📚 Table of Contents
 - [Introduction](#-introduction)
 - [Key Features](#-key-features)
-- [Installation](#-installation)
+- [Installation](#%EF%B8%8F-installation)
 - [Getting Started](#-getting-started)
 - [Example Test Case](#-example-test-case)
 - [Libraries and Resources](#-libraries-and-resources)
