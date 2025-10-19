@@ -1,14 +1,15 @@
 import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
-  testDir: './tests', // 📁 Thư mục chứa test file
+  testDir: './robot_order_demo/tests', // 📁 Thư mục chứa test file
   fullyParallel: true, // 🚀 Chạy song song tất cả test
   retries: 0, // 🔁 Thử lại nếu fail (tùy chọn)
+  // timeout: 120000, // ⏱️ Timeout cho mỗi test
   workers: process.env.CI ? 2 : undefined, // ⚙️ Giới hạn worker khi chạy CI
 
   use: {
     baseURL: 'https://demoqa.com', // 🌐 URL mặc định cho test
-    trace: 'on-first-retry', // 📊 Lưu trace khi test fail
+    trace: 'on', // 📊 Lưu trace khi test fail
     screenshot: 'only-on-failure', // 📸 Chụp ảnh khi fail
     video: 'retain-on-failure', // 🎥 Giữ video khi fail
     headless: true, // 👀 Chạy headless mặc định
