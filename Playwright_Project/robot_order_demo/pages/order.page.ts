@@ -70,7 +70,7 @@ export class OrderPage {
 
     await test.step(`Screenshot preview`, async () => {
       await this.preview_image.screenshot({
-        path: `screenshots/robot-preview-${address}.png`,
+        path: `robot_order_demo/screenshots/robot-preview-${address}.png`,
       });
     });
 
