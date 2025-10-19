@@ -1,17 +1,24 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "module": "CommonJS",
+    "module": "NodeNext",
     "lib": ["ESNext", "DOM"],
-    "moduleResolution": "Node",
+    "moduleResolution": "NodeNext",
     "esModuleInterop": true,
     "resolveJsonModule": true,
+    "types": ["node", "@playwright/test"],
+    "strict": true,
     "skipLibCheck": true,
-    "allowJs": true,
-    "types": ["node", "playwright"]
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "@tests/*": ["robot_order_demo/tests/*"],
+      "@pages/*": ["robot_order_demo/pages/*"],
+      "@utils/*": ["robot_order_demo/utils/*"]
+    }
   },
   "include": [
-    "tests/**/*.ts",
-    "playwright.config.ts"
+    "playwright.config.ts",
+    "robot_order_demo/**/*.ts"
   ]
 }

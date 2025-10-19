@@ -25,5 +25,4 @@ test('Handle Auto Complete', async ({ page }) => {
         await expect(page.locator('#autoCompleteMultiple')).toContainText('Magenta');
     });
 
-
 });
