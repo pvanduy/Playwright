@@ -12,7 +12,8 @@ This repository documents my journey of learning Playwright — a modern end-to-
 - [Example Test Case](#-example-test-case)
 - [Libraries and Resources](#-libraries-and-resources)
 - [Playwright Browser Launch Arguments](#%EF%B8%8F-playwright-browser-launch-arguments)
-  
+- [Playwright Actions Table](#%EF%B8%8Fplaywright-actions-table)
+
 ---
 
 ## 🌟 Introduction
@@ -217,3 +218,36 @@ export default defineConfig({
 });
 
 ```
+
+
+## ⚙️Playwright Actions Table
+
+| Category | Action | Code Example | Description |
+|---------|---------|--------------|-------------|
+| **Element Actions** | `click()` | `await page.click('#btn');` | Click vào element |
+| | `dblclick()` | `await page.dblclick('#item');` | Double click |
+| | `fill()` | `await page.fill('#input', 'text');` | Nhập text, ghi đè |
+| | `type()` | `await page.type('#input', 'text');` | Nhập text có delay |
+| | `press()` | `await page.press('#input', 'Enter');` | Ấn phím trên element |
+| | `check()` | `await page.check('#agree');` | Tick checkbox |
+| | `uncheck()` | `await page.uncheck('#agree');` | Bỏ tick checkbox |
+| | `selectOption()` | `await page.selectOption('#country','VN');` | Chọn option trong `<select>` |
+| | `setInputFiles()` | `await page.setInputFiles('#upload','file.png');` | Upload file |
+| | `dragAndDrop()` | `await page.dragAndDrop('#from','#to');` | Kéo–thả element |
+| **Mouse Actions** | `mouse.move()` | `await page.mouse.move(100,200);` | Di chuyển chuột |
+| | `mouse.down()` | `await page.mouse.down();` | Nhấn giữ chuột |
+| | `mouse.up()` | `await page.mouse.up();` | Nhả chuột |
+| | `mouse.click()` | `await page.mouse.click(300,400);` | Click theo tọa độ |
+| **Keyboard Actions** | `keyboard.type()` | `await page.keyboard.type('Hello');` | Gõ text |
+| | `keyboard.press()` | `await page.keyboard.press('Control+A');` | Nhấn tổ hợp phím |
+| | `keyboard.down()` | `await page.keyboard.down('Shift');` | Giữ phím |
+| | `keyboard.up()` | `await page.keyboard.up('Shift');` | Thả phím |
+| **Navigation** | `goto()` | `await page.goto(url);` | Điều hướng URL |
+| | `reload()` | `await page.reload();` | Reload trang |
+| | `goBack()` | `await page.goBack();` | Quay lại |
+| | `goForward()` | `await page.goForward();` | Tiến tới |
+| **Waiting** | `waitForSelector()` | `await page.waitForSelector('#done');` | Chờ element xuất hiện |
+| | `waitForTimeout()` | `await page.waitForTimeout(2000);` | Chờ cứng (không khuyến khích) |
+| | `waitForLoadState()` | `await page.waitForLoadState('networkidle');` | Chờ trang tải xong |
+| **Frames & Popup** | `frameLocator()` | `page.frameLocator('#frame')` | Tương tác iframe |
+| | `waitForEvent('popup')` | `await page.waitForEvent('popup');` | Chờ popup mở |
